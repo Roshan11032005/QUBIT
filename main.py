@@ -54,7 +54,7 @@ if st.session_state.page == "Home":
     # Button to go to Event List page
     if st.button("View Event List"):
         st.session_state.page = "Event List"
-        st.experimental_rerun()
+      
 
 elif st.session_state.page == "Event List":
     # Event List Page
@@ -83,4 +83,4 @@ elif st.session_state.page == "Event List":
     # Button to go back to Home page
     if st.button("Back to Home"):
         st.session_state.page = "Home"
-        st.experimental_rerun()
+      
