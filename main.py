@@ -34,12 +34,12 @@ if st.session_state.page == "Home":
     # Home Page
     st.title("Qubit - MGIT Technical Fest")
     st.write("""
-    Welcome to **Qubit 2023**, the annual technical fest organized by **Mahatma Gandhi Institute of Technology**!
+    Welcome to **Qubit 2024**, the annual technical fest organized by **Mahatma Gandhi Institute of Technology**!
     Join us to experience a wide array of events, competitions, and workshops where technology and innovation come together.
     """)
 
     # Why Attend Section
-    st.header("Why Attend Qubit 2023?")
+    st.header("Why Attend Qubit 2024?")
     st.write("""
     - **Learn from Experts**: Attend workshops and talks by industry leaders.
     - **Network with Peers**: Connect with like-minded individuals and build your professional network.
