@@ -69,7 +69,7 @@ if st.session_state.page == "Home":
     # Teaser Image or Background (optional, replace with a suitable image link if available)
     if st.button("View Event List"):
         st.session_state.page = "Event List"
-        st.experimental_rerun() 
+        st.rerun()
     # Footer
     st.write("---")
     st.markdown("<div style='text-align: center; font-size: 16px; color: grey;'>Organized by the Students of MGIT...</div>", unsafe_allow_html=True)
