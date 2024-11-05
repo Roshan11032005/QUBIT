@@ -79,7 +79,7 @@ if st.session_state.page == "Event List":
     st.title("🎉 List of Events 🎉")
     if st.button("Return to Home"):
         st.session_state.page = "Home"
-        st.experimental_rerun()
+        st.rerun()
     # Displaying each event button in a fixed-size layout
     col1, col2 = st.columns(2)  # Two-column layout for a cleaner look
 
@@ -88,63 +88,63 @@ if st.session_state.page == "Event List":
                      use_container_width=True):
             st.session_state.selected_event = "Bug Hunt and Reverse Coding"
             st.session_state.page = "Bug Hunt and Reverse Coding"
-            st.experimental_rerun()
+            st.rerun()
 
         if st.button("Website Development Contest", key="Website Development", help="View details for Website Development Contest", 
                      use_container_width=True):
             st.session_state.selected_event = "Website Development Contest"
             st.session_state.page = "Website Development Contest"
-            st.experimental_rerun()
+            st.rerun()
 
         if st.button("IdeaOrbit", key="IdeaOrbit", help="View details for IdeaOrbit", use_container_width=True):
             st.session_state.selected_event = "IdeaOrbit"
             st.session_state.page = "ideaOrbit"
-            st.experimental_rerun()
+            st.rerun()
 
         if st.button("IPL Auction", key="IPL Auction", help="View details for IPL Auction", use_container_width=True):
             st.session_state.selected_event = "IPL Auction"
             st.session_state.page = "IPL Auction"
-            st.experimental_rerun()
+            st.rerun()
 
         if st.button("Meme Making Contest", key="Meme Making Contest", help="View details for Meme Making Contest", 
                      use_container_width=True):
             st.session_state.selected_event = "Meme Making Contest"
             st.session_state.page = "Meme Making Contest"
-            st.experimental_rerun()
+            st.rerun()
 
     with col2:
         if st.button("Treasure Hunt", key="Treasure Hunt", help="View details for Treasure Hunt", use_container_width=True):
             st.session_state.selected_event = "Treasure Hunt"
             st.session_state.page = "Treasure Hunt"
-            st.experimental_rerun()
+            st.rerun()
 
         if st.button("Aptitude Trivia", key="Aptitude Trivia", help="View details for Aptitude Trivia", 
                      use_container_width=True):
             st.session_state.selected_event = "Aptitude Trivia"
             st.session_state.page = "Aptitude Trivia"
-            st.experimental_rerun()
+            st.rerun()
 
         if st.button("AI Art Gallery", key="AI Art Gallery", help="View details for AI Art Gallery", 
                      use_container_width=True):
             st.session_state.selected_event = "AI Art Gallery"
             st.session_state.page = "AI Art Gallery"
-            st.experimental_rerun()
+            st.rerun()
 
         if st.button("Squid Game", key="Squid Game", help="View details for Squid Game", use_container_width=True):
             st.session_state.selected_event = "Squid Game"
             st.session_state.page = "Squid Game"
-            st.experimental_rerun()
+            st.rerun()
 
         if st.button("Anybody Can Draw", key="Anybody Can Draw", help="View details for Anybody Can Draw", 
                      use_container_width=True):
             st.session_state.selected_event = "Anybody Can Draw"
             st.session_state.page = "Anybody Can Draw"
-            st.experimental_rerun()
+            st.rerun()
 
 if st.session_state.page == "Bug Hunt and Reverse Coding":
     if st.button("Return to Home"):
         st.session_state.page = "Home"
-        st.experimental_rerun()
+        st.rerun()
 
     # Event Header
     st.title("🕵️‍♂️ Bug Hunt and Reverse Coding")
@@ -205,11 +205,11 @@ if st.session_state.page == "Bug Hunt and Reverse Coding":
 
     if st.button("View Event List"):
         st.session_state.page = "Event List"
-        st.experimental_rerun()
+        st.rerun()
 if st.session_state.page == "Treasure Hunt":
     if st.button("Return to Home"):
         st.session_state.page = "Home"
-        st.experimental_rerun()
+        st.rerun()
 
     # Event Header
     st.title("🗺️ Treasure Hunt")
@@ -271,11 +271,11 @@ if st.session_state.page == "Treasure Hunt":
 
     if st.button("View Event List"):
         st.session_state.page = "Event List"
-        st.experimental_rerun()
+        st.rerun()
 if st.session_state.page == "Website Development Contest":
     if st.button("Return to Home"):
         st.session_state.page = "Home"
-        st.experimental_rerun()
+        st.rerun()
 
     # Event Header
     st.title("🌐 Website Development Contest")
@@ -336,11 +336,11 @@ if st.session_state.page == "Website Development Contest":
 
     if st.button("View Event List"):
         st.session_state.page = "Event List"
-        st.experimental_rerun()
+        st.rerun()
 if st.session_state.page == "Aptitude Trivia":
     if st.button("Return to Home"):
         st.session_state.page = "Home"
-        st.experimental_rerun()
+        st.rerun()
 
     # Event Header
     st.title("🧠 Aptitude Trivia")
@@ -401,11 +401,11 @@ if st.session_state.page == "Aptitude Trivia":
 
     if st.button("View Event List"):
         st.session_state.page = "Event List"
-        st.experimental_rerun()
+        st.rerun()
 if st.session_state.page == "ideaOrbit":
     if st.button("Return to Home"):
         st.session_state.page = "Home"
-        st.experimental_rerun()
+        st.rerun()
 
     # Event Header
     st.title("🌟 ideaOrbit")
@@ -466,14 +466,14 @@ if st.session_state.page == "ideaOrbit":
 
     if st.button("View Event List"):
         st.session_state.page = "Event List"
-        st.experimental_rerun()
+        st.rerun()
 
 
 
 if st.session_state.page == "AI Art Gallery":
     if st.button("Return to Home"):
         st.session_state.page = "Home"
-        st.experimental_rerun()
+        st.rerun()
 
     # Event Header
     st.title("🎨 AI Art Gallery")
@@ -531,11 +531,11 @@ if st.session_state.page == "AI Art Gallery":
 
     if st.button("View Event List"):
         st.session_state.page = "Event List"
-        st.experimental_rerun()
+        st.rerun()
 if st.session_state.page == "IPL Auction":
     if st.button("Return to Home"):
         st.session_state.page = "Home"
-        st.experimental_rerun()
+        st.rerun()
 
     # Event Header
     st.title("🏏 IPL Auction")
@@ -619,12 +619,12 @@ if st.session_state.page == "IPL Auction":
 
     if st.button("View Event List"):
         st.session_state.page = "Event List"
-        st.experimental_rerun()
+        st.rerun()
 
 if st.session_state.page == "Squid Game":
     if st.button("Return to Home"):
         st.session_state.page = "Home"
-        st.experimental_rerun()
+        st.rerun()
 
     # Event Header
     st.title("🦑 Squid Game")
@@ -705,11 +705,11 @@ if st.session_state.page == "Squid Game":
 
     if st.button("View Event List"):
         st.session_state.page = "Event List"
-        st.experimental_rerun()
+        st.rerun()
 if st.session_state.page == "Laser Escape":
     if st.button("Return to Home"):
         st.session_state.page = "Home"
-        st.experimental_rerun()
+        st.rerun()
 
     # Event Header
     st.title("🔦 Laser Escape")
@@ -787,11 +787,11 @@ if st.session_state.page == "Laser Escape":
 
     if st.button("View Event List"):
         st.session_state.page = "Event List"
-        st.experimental_rerun()
+        st.rerun()
 if st.session_state.page == "Laser Escape":
     if st.button("Return to Home"):
         st.session_state.page = "Home"
-        st.experimental_rerun()
+        st.rerun()
 
     # Event Header
     st.title("🔦 Laser Escape")
@@ -869,11 +869,11 @@ if st.session_state.page == "Laser Escape":
 
     if st.button("View Event List"):
         st.session_state.page = "Event List"
-        st.experimental_rerun()
+        st.rerun()
 if st.session_state.page == "Meme Making Contest":
     if st.button("Return to Home"):
         st.session_state.page = "Home"
-        st.experimental_rerun()
+        st.rerun()
 
     # Event Header
     st.title("😂 Meme Making Contest")
@@ -953,11 +953,11 @@ if st.session_state.page == "Meme Making Contest":
 
     if st.button("View Event List"):
         st.session_state.page = "Event List"
-        st.experimental_rerun()
+        st.rerun()
 if st.session_state.page == "Smash Karts":
     if st.button("Return to Home"):
         st.session_state.page = "Home"
-        st.experimental_rerun()
+        st.rerun()
 
     # Event Header
     st.title("🏎️ Smash Karts")
@@ -1037,11 +1037,11 @@ if st.session_state.page == "Smash Karts":
 
     if st.button("View Event List"):
         st.session_state.page = "Event List"
-        st.experimental_rerun()
+        st.rerun()
 if st.session_state.page == "Anybody Can Draw":
     if st.button("Return to Home"):
         st.session_state.page = "Home"
-        st.experimental_rerun()
+        st.rerun()
 
     # Event Header
     st.title("🎨 Anybody Can Draw")
@@ -1121,11 +1121,11 @@ if st.session_state.page == "Anybody Can Draw":
 
     if st.button("View Event List"):
         st.session_state.page = "Event List"
-        st.experimental_rerun()
+        st.rerun()
 if st.session_state.page == "Snake and Ladders":
     if st.button("Return to Home"):
         st.session_state.page = "Home"
-        st.experimental_rerun()
+        st.rerun()
 
     # Event Header
     st.title("🎲 Snake and Ladders")
@@ -1204,11 +1204,11 @@ if st.session_state.page == "Snake and Ladders":
 
     if st.button("View Event List"):
         st.session_state.page = "Event List"
-        st.experimental_rerun()
+        st.rerun()
 if st.session_state.page == "Dum Charades":
     if st.button("Return to Home"):
         st.session_state.page = "Home"
-        st.experimental_rerun()
+        st.rerun()
 
     # Event Header
     st.title("🎭 Dum Charades")
@@ -1288,4 +1288,4 @@ if st.session_state.page == "Dum Charades":
 
     if st.button("View Event List"):
         st.session_state.page = "Event List"
-        st.experimental_rerun()
+        st.rerun()
