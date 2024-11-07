@@ -31,12 +31,23 @@ st.balloons()
 
 # Home Page
 if st.session_state.page == "Home":
-    # Fest Title
-    st.markdown(
-        "<h1 style='text-align: center; font-size: 50px; color: #4A90E2;'>Welcome to Qubit 2024!</h1>",
-        unsafe_allow_html=True
-    )
     
+    st.markdown(
+    """
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <h1 style='font-size: 50px; color: #4A90E2; margin: 0; display: flex; align-items: center;'>
+            <img src="https://github.com/Roshan11032005/QUBIT/blob/main/WhatsApp%20Image%202024-11-07%20at%207.12.18%20PM-removebg-preview.jpg?raw=true" alt="Logo" style="width:100px; margin-right: 10px;">
+            Welcome to Qubit 2024!
+        </h1>
+        <div style="text-align: center; font-size: 24px; margin-top: 10px;">
+            
+       
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+    # Fest Title
+   
     # Tagline and Fest Intro
     st.markdown("""
     <div style='text-align: center; font-size: 24px; margin-top: -20px;'>
