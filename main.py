@@ -7,8 +7,8 @@ st.set_page_config(page_title="Qubit - MGIT Technical Fest", layout="centered")
 if "page" not in st.session_state:
     st.session_state.page = "Home"
 
-# CSS for custom styles
-st.markdown("""
+     # CSS for custom styles
+    st.markdown("""
 <style>
     /* Background and title color */
     .css-18e3th9 h1 { color: #FF4500; }
@@ -31,21 +31,44 @@ st.balloons()
 
 # Home Page
 if st.session_state.page == "Home":
-    
     st.markdown(
     """
-    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <style>
+        /* Mobile optimization */
+        @media (max-width: 600px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .header-container h1 {
+                font-size: 36px;
+                margin: 10px 0;
+            }
+            .header-container img {
+                width: 80px;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            .subheading {
+                font-size: 18px;
+            }
+        }
+    </style>
+    <div class="header-container" style="display: flex; justify-content: center; align-items: center; flex-direction: row;">
         <h1 style='font-size: 50px; color: #4A90E2; margin: 0; display: flex; align-items: center;'>
             <img src="https://github.com/Roshan11032005/QUBIT/blob/main/WhatsApp%20Image%202024-11-07%20at%207.12.18%20PM-removebg-preview.jpg?raw=true" alt="Logo" style="width:100px; margin-right: 10px;">
             Welcome to Qubit 2024!
         </h1>
         <div style="text-align: center; font-size: 24px; margin-top: 10px;">
-            
-       
+            <em class="subheading">The Ultimate Tech Fest at Mahatma Gandhi Institute of Technology</em>
+        </div>
     </div>
     """,
     unsafe_allow_html=True
 )
+
+    
+   
     # Fest Title
    
     # Tagline and Fest Intro
