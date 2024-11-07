@@ -84,12 +84,17 @@ if st.session_state.page == "Event List":
     col1, col2 = st.columns(2)  # Two-column layout for a cleaner look
 
     with col1:
-        if st.button("Bug Hunt and Reverse Coding", key="Bug Hunt", help="View details for Bug Hunt and Reverse Coding", 
+        if st.button("Bug Hunt and Reverse Coding", key="Laser Escape", help="View details for Laser Escape", 
                      use_container_width=True):
             st.session_state.selected_event = "Bug Hunt and Reverse Coding"
             st.session_state.page = "Bug Hunt and Reverse Coding"
             st.rerun()
-
+        if st.button("Laser Escape", key="Bug Hunt", help="View details for Laser Escape", 
+                     use_container_width=True):
+            st.session_state.selected_event = "Bug Hunt and Reverse Coding"
+            st.session_state.page = "Laser Escape"
+            st.rerun()
+       
         if st.button("Website Development Contest", key="Website Development", help="View details for Website Development Contest", 
                      use_container_width=True):
             st.session_state.selected_event = "Website Development Contest"
@@ -111,8 +116,35 @@ if st.session_state.page == "Event List":
             st.session_state.selected_event = "Meme Making Contest"
             st.session_state.page = "Meme Making Contest"
             st.rerun()
+        if st.button("Snake and Ladders", key="Snake and Ladders", help="View details for Meme Making Contest", 
+                     use_container_width=True):
+            st.session_state.selected_event = "Meme Making Contest"
+            st.session_state.page = "Snake and Ladders"
+            st.rerun()
+        if st.button("Code Challenge Showdown", key="Code Challenge Showdown", help="View details for Meme Making Contest", 
+                     use_container_width=True):
+            st.session_state.selected_event = "Meme Making Contest"
+            st.session_state.page = "Code Challenge Showdown"
+            st.rerun()
 
     with col2:
+        if st.button("Smash Karts", key="Smash Karts", help="View details for Smash Karts", 
+                     use_container_width=True):
+            st.session_state.selected_event = "Bug Hunt and Reverse Coding"
+            st.session_state.page = "Smash Karts"
+            st.rerun()
+        if st.button("Dum Charades", key="Dum Charades", help="View details for Dum Charades", 
+                     use_container_width=True):
+            st.session_state.selected_event = "Bug Hunt and Reverse Coding"
+            st.session_state.page = "Dum Charades"
+            st.rerun()
+        if st.button("Minute to Win It", key="Minute to Win It", help="View details for Dum Charades", 
+                     use_container_width=True):
+            st.session_state.selected_event = "Bug Hunt and Reverse Coding"
+            st.session_state.page = "Minute to Win It"
+            st.rerun()
+        
+
         if st.button("Treasure Hunt", key="Treasure Hunt", help="View details for Treasure Hunt", use_container_width=True):
             st.session_state.selected_event = "Treasure Hunt"
             st.session_state.page = "Treasure Hunt"
@@ -706,88 +738,7 @@ if st.session_state.page == "Squid Game":
     if st.button("View Event List"):
         st.session_state.page = "Event List"
         st.rerun()
-if st.session_state.page == "Laser Escape":
-    if st.button("Return to Home"):
-        st.session_state.page = "Home"
-        st.rerun()
 
-    # Event Header
-    st.title("🔦 Laser Escape")
-    st.subheader("Dodge, Duck, and Outsmart the Laser Maze!")
-
-    # Event Overview
-    st.markdown("""
-    Welcome to **Laser Escape**! Get ready to navigate through increasingly challenging laser mazes, testing your agility, critical thinking, and timing. Will you make it through to the final escape?
-    """)
-
-    # Event Details
-    st.header("Event Levels")
-    st.markdown("""
-    ### Level 1: Basic Maze
-    - **Objective**: Navigate through an entry-level laser maze with minimal obstacles.
-    - **Difficulty**: Beginner
-
-    ### Level 2: Intermediate Maze
-    - **Objective**: Face a denser laser field and trickier paths, demanding more agility and focus.
-    - **Difficulty**: Intermediate
-
-    ### Level 3: Advanced Escape
-    - **Objective**: Conquer a time-constrained, high-density laser maze, where critical thinking and fast reflexes are key to survival.
-    - **Difficulty**: Advanced
-    """)
-
-    # Registration Information
-    st.header("Registration Details")
-    st.markdown("""
-    - **Fee**: ₹40 for 1 person
-    - **How to Register**: Sign up solo to see if you have what it takes to make it through the ultimate laser escape!
-    """)
-
-    # Call to Action
-    st.markdown("#### 🏆 **Register now and prepare for the ultimate Laser Escape challenge!** 🏆")
-    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"  # Replace with your actual registration link
-    st.markdown(f'''
-        <a href="{registration_link}" target="_blank">
-            <button style="
-                width:100%; 
-                padding:10px; 
-                background-color:#FF4500; 
-                color:white; 
-                font-size:16px; 
-                border:none; 
-                border-radius:5px;
-                cursor:pointer;">
-                Register Now!
-            </button>
-        </a>
-    ''', unsafe_allow_html=True)
-
-    # Footer
-    st.markdown("---")
-    st.markdown("For more information or queries, please contact [Event Organizer](mailto:event.organizer@example.com).")
-
-    # Customize layout and style
-    st.markdown("""
-        <style>
-            /* Center the text and apply primary color */
-            .css-1d391kg { 
-                text-align: center; 
-                color: #FF4500;
-            }
-            /* Adjust the color for secondary text */
-            .css-145kmo2 { 
-                color: #3A3A3A;
-            }
-            /* Enhance button hover effect */
-            a > button:hover {
-                background-color: #FF6347;
-            }
-        </style>
-    """, unsafe_allow_html=True)
-
-    if st.button("View Event List"):
-        st.session_state.page = "Event List"
-        st.rerun()
 if st.session_state.page == "Laser Escape":
     if st.button("Return to Home"):
         st.session_state.page = "Home"
@@ -1282,6 +1233,191 @@ if st.session_state.page == "Dum Charades":
             /* Enhance button hover effect */
             a > button:hover {
                 background-color: #FF6347;
+            }
+        </style>
+    """, unsafe_allow_html=True)
+
+    if st.button("View Event List"):
+        st.session_state.page = "Event List"
+        st.rerun()
+import streamlit as st
+
+# Page Navigation
+if st.session_state.page == "Code Challenge Showdown":
+    if st.button("Return to Home"):
+        st.session_state.page = "Home"
+        st.rerun()
+    
+    # Event Header
+    st.title("💻 Code Challenge Showdown")
+    st.subheader("Test Your Coding Skills and Break the Bugs!")
+
+    # Event Overview
+    st.markdown("""
+    Welcome to the **Code Challenge Showdown**! Prepare yourself for 20 quick-fire coding puzzles in C, Python, or Java. It's a test of debugging skills, logical thinking, and speed. Can you solve the most challenges within the time limit and become the ultimate code-breaker? Let's get coding!
+    """)
+
+    # How to Play
+    st.header("How to Play")
+    st.markdown("""
+    - Participants will receive code challenges with snippets that may contain errors or require rearrangement.
+    - Players have to identify and fix as many issues as possible within the allotted time.
+    """)
+
+    # Categories
+    st.header("Categories")
+    st.markdown("""
+    - **Category 1**: **C Language** (3 minutes) - Exclusive to 1st-year students.
+    - **Category 2**: **Python or Java** (5 minutes) - Choose only one of these languages. Choose wisely!
+    """)
+
+    # Pricing
+    st.header("Pricing")
+    st.markdown("""
+    - **Solo**: ₹40 per person
+    - **Duo**: ₹60 for two people
+    """)
+
+    # Call to Action
+    st.markdown("#### 🎉 **Register now and put your coding skills to the test!** 🎉")
+    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"  # Replace with actual registration link
+    st.markdown(f'''
+        <a href="{registration_link}" target="_blank">
+            <button style="
+                width:100%; 
+                padding:10px; 
+                background-color:#007BFF; 
+                color:white; 
+                font-size:16px; 
+                border:none; 
+                border-radius:5px;
+                cursor:pointer;">
+                Register Now!
+            </button>
+        </a>
+    ''', unsafe_allow_html=True)
+
+    # Footer
+    st.markdown("---")
+    st.markdown("For more information or queries, please contact [Event Organizer](mailto:event.organizer@example.com).")
+
+    # Customize layout and style
+    st.markdown("""
+        <style>
+            /* Center the text and apply primary color */
+            .css-1d391kg { 
+                text-align: center; 
+                color: #007BFF;
+            }
+            /* Adjust the color for secondary text */
+            .css-145kmo2 { 
+                color: #3A3A3A;
+            }
+            /* Enhance button hover effect */
+            a > button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    """, unsafe_allow_html=True)
+
+    if st.button("View Event List"):
+        st.session_state.page = "Event List"
+        st.rerun()
+import streamlit as st
+
+# Page Navigation
+
+if st.session_state.page == "Minute to Win It" :
+    if st.button("Return to Home"):
+        st.session_state.page = "Home"
+        st.rerun()
+    
+    # Event Header
+    st.title("🎉 Minute to Win It - Non-technical Event 🎉")
+    st.subheader("Are you ready for the ultimate 60-second challenge?")
+
+    # Event Overview
+    st.markdown("""
+    Welcome to the ultimate **“Minute to Win It”** face-off! Get ready for a high-energy battle where teams tackle hilarious, fast-paced challenges designed to test your balance, aim, and speed. 
+    From balancing cups and stacking dice to bouncing ping-pong balls with precision, you'll have just **60 seconds** to complete each task.
+    It's fun, frantic, and all about teamwork and quick reflexes. Are you up for the challenge?
+    """)
+
+    # Game Descriptions
+    st.header("Games")
+    
+    # Game 1: Stacking Cups
+    st.subheader("Game 1: Stacking Cups")
+    st.markdown("""
+    It’s a game of stacking cups where each of the two individual players uses one of their hands and stacks the cups!
+    """)
+
+    # Game 2: Throw-A-Ball
+    st.subheader("Game 2: Throw-A-Ball")
+    st.markdown("""
+    In this game, players take turns tossing a ping pong ball into the cups arranged on a table. Scores are assigned based on the distance of the player from the cup. 
+    The longer the distance, the higher the score! After a minute, the team with the highest score wins.
+    """)
+
+    # Game 3: Tilt-A-Cup
+    st.subheader("Game 3: Tilt-A-Cup")
+    st.markdown("""
+    The ping pong ball bounced by one player should be caught with a cup by the other player and, once caught, a cup should be stacked with another cup and the game continues.
+    The team with the highest number of cups after a minute shall win.
+    """)
+
+    # Game 4: Surprise Challenge
+    st.subheader("Game 4: Surprise Challenge")
+    st.markdown("""
+    **Expect the unexpected!** Game 4 is a mystery round—you’ll have to show up and be ready for anything! No hints, no sneak peeks—just pure excitement and a twist you won’t see coming.
+    Get ready to think on your feet and tackle a challenge that’s full of surprises!
+    """)
+
+    # Pricing
+    st.header("Pricing")
+    st.markdown("""
+    - **Solo**: ₹50 per person
+    - **Duo**: ₹70 for two people
+    """)
+
+    # Call to Action
+    st.markdown("#### 🎉 **Register now and join the fun!** 🎉")
+    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"  # Replace with actual registration link
+    st.markdown(f'''
+        <a href="{registration_link}" target="_blank">
+            <button style="
+                width:100%; 
+                padding:10px; 
+                background-color:#007BFF; 
+                color:white; 
+                font-size:16px; 
+                border:none; 
+                border-radius:5px;
+                cursor:pointer;">
+                Register Now!
+            </button>
+        </a>
+    ''', unsafe_allow_html=True)
+
+    # Footer
+    st.markdown("---")
+    st.markdown("For more information or queries, please contact [Event Organizer](mailto:event.organizer@example.com).")
+
+    # Customize layout and style
+    st.markdown("""
+        <style>
+            /* Center the text and apply primary color */
+            .css-1d391kg { 
+                text-align: center; 
+                color: #007BFF;
+            }
+            /* Adjust the color for secondary text */
+            .css-145kmo2 { 
+                color: #3A3A3A;
+            }
+            /* Enhance button hover effect */
+            a > button:hover {
+                background-color: #0056b3;
             }
         </style>
     """, unsafe_allow_html=True)
