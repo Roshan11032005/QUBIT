@@ -81,18 +81,35 @@ if st.session_state.page == "Home":
     )
     
     # Teaser Image or Background (optional, replace with a suitable image link if available)
-    if st.button("View Event List"):
+    #Centrailzed Event LIst
+    st.markdown(
+    '''
+    <div style="display: flex; justify-content: center; margin-top: 10px;">
+        <a href="?page=event_list" style="text-decoration: none;">
+            <button style="width:100%; max-width: 150px; padding:10px; background-color:transparent; color:#FF6347; font-size:16px; border:2px solid #FF6347; border-radius:5px; cursor:pointer;">
+                View Event List
+            </button>
+        </a>
+    </div>
+    ''',
+    unsafe_allow_html=True
+    )
+    if st.query_params.get("page") == "event_list":
         st.session_state.page = "Event List"
         st.rerun()
+
+
     # Footer
     st.write("---")
     st.markdown("<div style='text-align: center; font-size: 16px; color: grey;'>Organized by the Students of MGIT...</div>", unsafe_allow_html=True)
-
+         
 # Event List Page
+#Changed The event list button to be more centred
 if st.session_state.page == "Event List":
     st.title("🎉 List of Events 🎉")
     if st.button("Return to Home"):
         st.session_state.page = "Home"
+        st.query_params.page="home"
         st.rerun()
     # Displaying each event button in a fixed-size layout
     col1, col2 = st.columns(2)  # Two-column layout for a cleaner look
@@ -103,6 +120,7 @@ if st.session_state.page == "Event List":
             st.session_state.selected_event = "Bug Hunt and Reverse Coding"
             st.session_state.page = "Bug Hunt and Reverse Coding"
             st.rerun()
+
         if st.button("Laser Escape", key="Bug Hunt", help="View details for Laser Escape", 
                      use_container_width=True):
             st.session_state.selected_event = "Bug Hunt and Reverse Coding"
@@ -114,17 +132,32 @@ if st.session_state.page == "Event List":
             st.session_state.selected_event = "Website Development Contest"
             st.session_state.page = "Website Development Contest"
             st.rerun()
+        
+        #Pushed this UP
+        if st.button("Logic Link", key="Logic Link", help="View details for Meme Making Contest", 
+                     use_container_width=True):
+            st.session_state.selected_event = "Meme Making Contest"
+            st.session_state.page = "Logic Link"
+            st.rerun()
 
         if st.button("IdeaOrbit", key="IdeaOrbit", help="View details for IdeaOrbit", use_container_width=True):
             st.session_state.selected_event = "IdeaOrbit"
             st.session_state.page = "ideaOrbit"
             st.rerun()
-
+        
+        
         if st.button("IPL Auction", key="IPL Auction", help="View details for IPL Auction", use_container_width=True):
             st.session_state.selected_event = "IPL Auction"
             st.session_state.page = "IPL Auction"
             st.rerun()
 
+        #Pushed this up too
+        if st.button("Minute to Win It", key="Minute to Win It", help="View details for Minute to Win It", 
+                     use_container_width=True):
+            st.session_state.selected_event = "Minute to Win It"
+            st.session_state.page = "Minute to Win It"
+            st.rerun()    
+    
         if st.button("Meme Making Contest", key="Meme Making Contest", help="View details for Meme Making Contest", 
                      use_container_width=True):
             st.session_state.selected_event = "Meme Making Contest"
@@ -135,11 +168,7 @@ if st.session_state.page == "Event List":
             st.session_state.selected_event = "Meme Making Contest"
             st.session_state.page = "Snake and Ladders"
             st.rerun()
-        if st.button("Code Challenge Showdown", key="Code Challenge Showdown", help="View details for Meme Making Contest", 
-                     use_container_width=True):
-            st.session_state.selected_event = "Meme Making Contest"
-            st.session_state.page = "Code Challenge Showdown"
-            st.rerun()
+        
 
     with col2:
         if st.button("Smash Karts", key="Smash Karts", help="View details for Smash Karts", 
@@ -152,11 +181,7 @@ if st.session_state.page == "Event List":
             st.session_state.selected_event = "Bug Hunt and Reverse Coding"
             st.session_state.page = "Dum Charades"
             st.rerun()
-        if st.button("Minute to Win It", key="Minute to Win It", help="View details for Dum Charades", 
-                     use_container_width=True):
-            st.session_state.selected_event = "Bug Hunt and Reverse Coding"
-            st.session_state.page = "Minute to Win It"
-            st.rerun()
+
         
 
         if st.button("Treasure Hunt", key="Treasure Hunt", help="View details for Treasure Hunt", use_container_width=True):
@@ -1257,18 +1282,18 @@ if st.session_state.page == "Dum Charades":
 import streamlit as st
 
 # Page Navigation
-if st.session_state.page == "Code Challenge Showdown":
+if st.session_state.page == "Logic Link":
     if st.button("Return to Home"):
         st.session_state.page = "Home"
         st.rerun()
     
     # Event Header
-    st.title("💻 Code Challenge Showdown")
+    st.title("💻 Logic Link")
     st.subheader("Test Your Coding Skills and Break the Bugs!")
 
     # Event Overview
     st.markdown("""
-    Welcome to the **Code Challenge Showdown**! Prepare yourself for 20 quick-fire coding puzzles in C, Python, or Java. It's a test of debugging skills, logical thinking, and speed. Can you solve the most challenges within the time limit and become the ultimate code-breaker? Let's get coding!
+    Welcome to the **Logic Link**! Prepare yourself for 20 quick-fire coding puzzles in C, Python, or Java. It's a test of debugging skills, logical thinking, and speed. Can you solve the most challenges within the time limit and become the ultimate code-breaker? Let's get coding!
     """)
 
     # How to Play
