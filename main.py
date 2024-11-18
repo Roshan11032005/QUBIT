@@ -163,19 +163,16 @@ if st.session_state.page == "Event List":
             st.session_state.selected_event = "Meme Making Contest"
             st.session_state.page = "Meme Making Contest"
             st.rerun()
+
+        
+
+    with col2:
         if st.button("Snake and Ladders", key="Snake and Ladders", help="View details for Meme Making Contest", 
                      use_container_width=True):
             st.session_state.selected_event = "Meme Making Contest"
             st.session_state.page = "Snake and Ladders"
             st.rerun()
         
-
-    with col2:
-        if st.button("Smash Karts", key="Smash Karts", help="View details for Smash Karts", 
-                     use_container_width=True):
-            st.session_state.selected_event = "Bug Hunt and Reverse Coding"
-            st.session_state.page = "Smash Karts"
-            st.rerun()
         if st.button("Dum Charades", key="Dum Charades", help="View details for Dum Charades", 
                      use_container_width=True):
             st.session_state.selected_event = "Bug Hunt and Reverse Coding"
@@ -254,7 +251,7 @@ if st.session_state.page == "Bug Hunt and Reverse Coding":
 
     # Call to Action
     st.markdown("#### 🏆 **Register now and secure your spot in the ultimate coding challenge!** 🏆")
-    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"
+    registration_link = "https://docs.google.com/forms/d/1gLFJY6IPkMOPa3ODGJbOZw20X7AniR8JCVR75bycOs8/edit"
     st.markdown(f'<a href="{registration_link}" target="_blank"><button style="width:100%; padding:10px; background-color:#4CAF50; color:white; font-size:16px;">Register Now!</button></a>', unsafe_allow_html=True)
 
     # Footer
@@ -320,7 +317,7 @@ if st.session_state.page == "Treasure Hunt":
 
     # Call to Action
     st.markdown("#### 🏆 **Register now and secure your spot in the ultimate Treasure Hunt adventure!** 🏆")
-    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"  # Replace with your link
+    registration_link = "https://docs.google.com/forms/d/1nnfYE2BVTJhSoLTE7ceT7DjzePJxB5D_9Hd0yRSYjdw/edit" # Replace with your link
     st.markdown(f'<a href="{registration_link}" target="_blank"><button style="width:100%; padding:10px; background-color:#4CAF50; color:white; font-size:16px;">Register Now!</button></a>', unsafe_allow_html=True)
 
     # Footer
@@ -385,7 +382,7 @@ if st.session_state.page == "Website Development Contest":
 
     # Call to Action
     st.markdown("#### 🏆 **Register now and secure your spot in the ultimate Website Development Contest!** 🏆")
-    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"  # Replace with your link
+    registration_link = "https://docs.google.com/forms/d/1d1p1ZvkwD1ZxGl1N_qqWcgGQyvIfWb_pvkJVim1dcuQ/edit" # Replace with your link
     st.markdown(f'<a href="{registration_link}" target="_blank"><button style="width:100%; padding:10px; background-color:#4CAF50; color:white; font-size:16px;">Register Now!</button></a>', unsafe_allow_html=True)
 
     # Footer
@@ -450,7 +447,7 @@ if st.session_state.page == "Aptitude Trivia":
 
     # Call to Action
     st.markdown("#### 🏆 **Register now and secure your spot in the ultimate Aptitude Trivia challenge!** 🏆")
-    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"  # Replace with your link
+    registration_link = "https://docs.google.com/forms/d/1-7Rr1xyT0S7cA1lImcpFS8aFHYdkbIgSnIZKi6vLQ98/edit"  # Replace with your link
     st.markdown(f'<a href="{registration_link}" target="_blank"><button style="width:100%; padding:10px; background-color:#4CAF50; color:white; font-size:16px;">Register Now!</button></a>', unsafe_allow_html=True)
 
     # Footer
@@ -515,7 +512,7 @@ if st.session_state.page == "ideaOrbit":
 
     # Call to Action
     st.markdown("#### 🏆 **Register now and secure your spot in the ultimate ideaOrbit competition!** 🏆")
-    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"  # Replace with your link
+    registration_link = "https://docs.google.com/forms/d/1T8vhcyIsO7alrs8hRLwm-YdjUTLTMUowUsoy2CUsyeg/edit"  # Replace with your link
     st.markdown(f'<a href="{registration_link}" target="_blank"><button style="width:100%; padding:10px; background-color:#4CAF50; color:white; font-size:16px;">Register Now!</button></a>', unsafe_allow_html=True)
 
     # Footer
@@ -580,7 +577,7 @@ if st.session_state.page == "AI Art Gallery":
 
     # Call to Action
     st.markdown("#### 🏆 **Register now and secure your spot in the ultimate AI Art Gallery showcase!** 🏆")
-    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"  # Replace with your link
+    registration_link ="https://docs.google.com/forms/d/1bniWIn98KjqeBVtGBem44Td2TPEWccDUyR5yWYUsQSE/edit" # Replace with your link
     st.markdown(f'<a href="{registration_link}" target="_blank"><button style="width:100%; padding:10px; background-color:#4CAF50; color:white; font-size:16px;">Register Now!</button></a>', unsafe_allow_html=True)
 
     # Footer
@@ -648,7 +645,7 @@ if st.session_state.page == "IPL Auction":
 
     # Call to Action
     st.markdown("#### 🏆 **Register now and secure your spot in the ultimate IPL Auction challenge!** 🏆")
-    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"  # Replace with your actual registration link
+    registration_link ="https://docs.google.com/forms/d/1C7zZu70KSraW9thvK-fWTn5Dc0TkfjJHtV8XeZjacmQ/edit"  # Replace with your actual registration link
     st.markdown(f'''
         <a href="{registration_link}" target="_blank">
             <button style="
@@ -734,7 +731,7 @@ if st.session_state.page == "Squid Game":
 
     # Call to Action
     st.markdown("#### 🏆 **Register now and take your chance in the ultimate Squid Game challenge!** 🏆")
-    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"  # Replace with the actual registration link
+    registration_link = "https://docs.google.com/forms/d/1eARoKHEiXULbwS1_6R8n-UU9LHonbrfhlvz6MXOCaNk/edit"  # Replace with the actual registration link
     st.markdown(f'''
         <a href="{registration_link}" target="_blank">
             <button style="
@@ -817,7 +814,7 @@ if st.session_state.page == "Laser Escape":
 
     # Call to Action
     st.markdown("#### 🏆 **Register now and prepare for the ultimate Laser Escape challenge!** 🏆")
-    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"  # Replace with your actual registration link
+    registration_link ="https://docs.google.com/forms/d/156su1O5h5RoQfNN1_Apsagp10a_QL5D7hEd2Gql807M/edit"  # Replace with your actual registration link
     st.markdown(f'''
         <a href="{registration_link}" target="_blank">
             <button style="
@@ -901,7 +898,7 @@ if st.session_state.page == "Meme Making Contest":
 
     # Call to Action
     st.markdown("#### 🏆 **Register now to join the Meme Making Contest and let the laughs begin!** 🏆")
-    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"  # Replace with your actual registration link
+    registration_link ="https://docs.google.com/forms/d/1SUFg7Vu2FAm9gjTBkoaHhzaMwrrFGhnFH4WpeH_8ZKs/edit"# Replace with your actual registration link
     st.markdown(f'''
         <a href="{registration_link}" target="_blank">
             <button style="
@@ -944,90 +941,7 @@ if st.session_state.page == "Meme Making Contest":
     if st.button("View Event List"):
         st.session_state.page = "Event List"
         st.rerun()
-if st.session_state.page == "Smash Karts":
-    if st.button("Return to Home"):
-        st.session_state.page = "Home"
-        st.rerun()
 
-    # Event Header
-    st.title("🏎️ Smash Karts")
-    st.subheader("Rev Up Your Engines and Race to Victory!")
-
-    # Event Overview
-    st.markdown("""
-    Welcome to **Smash Karts**! Get ready to race against the clock and your competitors in a thrilling karting event. From qualification heats to the grand finale, only the fastest and most skilled racers will prevail!
-    """)
-
-    # Event Details
-    st.header("Event Levels")
-    st.markdown("""
-    ### Level 1: Qualification Heats
-    - **Objective**: Participants compete in initial kart races to secure their spot in the semi-finals.
-    - **Difficulty**: Beginner
-
-    ### Level 2: Semi-Finals
-    - **Objective**: The top racers from the heats face off with added challenges and obstacles.
-    - **Difficulty**: Intermediate
-
-    ### Level 3: Grand Finale
-    - **Objective**: The final race determines the champion. Only the best will cross the finish line first!
-    - **Difficulty**: Advanced
-    """)
-
-    # Registration Information
-    st.header("Registration Details")
-    st.markdown("""
-    - **Fee**:
-      - ₹30 for 1 person
-      - ₹50 for 2 persons
-    - **How to Register**: Race solo or team up with a friend and put your driving skills to the test!
-    """)
-
-    # Call to Action
-    st.markdown("#### 🏆 **Register now and get ready to smash your way to victory!** 🏆")
-    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"  # Replace with your actual registration link
-    st.markdown(f'''
-        <a href="{registration_link}" target="_blank">
-            <button style="
-                width:100%; 
-                padding:10px; 
-                background-color:#1E90FF; 
-                color:white; 
-                font-size:16px; 
-                border:none; 
-                border-radius:5px;
-                cursor:pointer;">
-                Register Now!
-            </button>
-        </a>
-    ''', unsafe_allow_html=True)
-
-    # Footer
-    st.markdown("---")
-    st.markdown("For more information or queries, please contact [Event Organizer](mailto:event.organizer@example.com).")
-
-    # Customize layout and style
-    st.markdown("""
-        <style>
-            /* Center the text and apply primary color */
-            .css-1d391kg { 
-                text-align: center; 
-                color: #1E90FF;
-            }
-            /* Adjust the color for secondary text */
-            .css-145kmo2 { 
-                color: #3A3A3A;
-            }
-            /* Enhance button hover effect */
-            a > button:hover {
-                background-color: #00BFFF;
-            }
-        </style>
-    """, unsafe_allow_html=True)
-
-    if st.button("View Event List"):
-        st.session_state.page = "Event List"
-        st.rerun()
 if st.session_state.page == "Anybody Can Draw":
     if st.button("Return to Home"):
         st.session_state.page = "Home"
@@ -1069,7 +983,7 @@ if st.session_state.page == "Anybody Can Draw":
 
     # Call to Action
     st.markdown("#### 🏆 **Register now and embrace your artistic journey!** 🏆")
-    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"  # Replace with your actual registration link
+    registration_link = "https://docs.google.com/forms/d/16SRyDfV3asjdKXnIXORt9BBK7EpcXF9p2Z0DMAL4YFU/edit"  # Replace with your actual registration link
     st.markdown(f'''
         <a href="{registration_link}" target="_blank">
             <button style="
@@ -1152,7 +1066,7 @@ if st.session_state.page == "Snake and Ladders":
 
     # Call to Action
     st.markdown("#### 🏆 **Register now and roll the dice for your chance to win!** 🏆")
-    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"  # Replace with your actual registration link
+    registration_link ="https://docs.google.com/forms/d/1hGoTWiB3kvcZKZvNoQym1hcPLR7ZHPd5p_2AjwFF-Z0/edit" # Replace with your actual registration link
     st.markdown(f'''
         <a href="{registration_link}" target="_blank">
             <button style="
@@ -1236,7 +1150,7 @@ if st.session_state.page == "Dum Charades":
 
     # Call to Action
     st.markdown("#### 🏆 **Register now and bring your best acting game!** 🏆")
-    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"  # Replace with your actual registration link
+    registration_link = "https://docs.google.com/forms/d/1j-foDGW4X19wJgFqRRDGeQo2JGEXnMmpxc6BovncrFc/edit"  # Replace with your actual registration link
     st.markdown(f'''
         <a href="{registration_link}" target="_blank">
             <button style="
@@ -1279,7 +1193,7 @@ if st.session_state.page == "Dum Charades":
     if st.button("View Event List"):
         st.session_state.page = "Event List"
         st.rerun()
-import streamlit as st
+
 
 # Page Navigation
 if st.session_state.page == "Logic Link":
@@ -1319,7 +1233,7 @@ if st.session_state.page == "Logic Link":
 
     # Call to Action
     st.markdown("#### 🎉 **Register now and put your coding skills to the test!** 🎉")
-    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"  # Replace with actual registration link
+    registration_link = "https://docs.google.com/forms/d/1O4eoU4d7QrXljObGBykNNFdfRRFGZ9BesLj5sU291Lo/edit" # Replace with actual registration link
     st.markdown(f'''
         <a href="{registration_link}" target="_blank">
             <button style="
@@ -1421,7 +1335,7 @@ if st.session_state.page == "Minute to Win It" :
 
     # Call to Action
     st.markdown("#### 🎉 **Register now and join the fun!** 🎉")
-    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"  # Replace with actual registration link
+    registration_link = "https://docs.google.com/forms/d/1SPRrMWWInoi_1E52U7rj2DcagUkKRddEZKXXixQlJkE/edit"  # Replace with actual registration link
     st.markdown(f'''
         <a href="{registration_link}" target="_blank">
             <button style="
