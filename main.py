@@ -74,12 +74,7 @@ if st.session_state.page == "Home":
     """)
 
     # Registration and Event List Buttons
-    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"
-    st.markdown(
-        f'<a href="{registration_link}" target="_blank"><button style="width:100%; padding:15px; background-color:#FF6347; color:white; font-size:18px; border:none; border-radius:5px; cursor:pointer;">Register Now!</button></a>',
-        unsafe_allow_html=True
-    )
-    
+ 
     # Teaser Image or Background (optional, replace with a suitable image link if available)
     #Centrailzed Event LIst
     st.markdown(
@@ -1420,7 +1415,7 @@ if st.session_state.page == "Smash Karts":
 
     # Call to Action
     st.markdown("#### 🏆 **Register now and get ready to smash your way to victory!** 🏆")
-    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"  # Replace with your actual registration link
+    registration_link ="https://docs.google.com/forms/d/156su1O5h5RoQfNN1_Apsagp10a_QL5D7hEd2Gql807M/edit"# Replace with your actual registration link
     st.markdown(f'''
         <a href="{registration_link}" target="_blank">
             <button style="
