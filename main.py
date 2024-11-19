@@ -121,10 +121,10 @@ if st.session_state.page == "Event List":
             st.session_state.page = "Bug Hunt and Reverse Coding"
             st.rerun()
 
-        if st.button("Laser Escape", key="Bug Hunt", help="View details for Laser Escape", 
+        if st.button("Smash Karts", key="Bug Hunt", help="View details for Smash Karts", 
                      use_container_width=True):
             st.session_state.selected_event = "Bug Hunt and Reverse Coding"
-            st.session_state.page = "Laser Escape"
+            st.session_state.page = "Smash Karts"
             st.rerun()
        
         if st.button("Website Development Contest", key="Website Development", help="View details for Website Development Contest", 
@@ -1276,7 +1276,7 @@ if st.session_state.page == "Logic Link":
     if st.button("View Event List"):
         st.session_state.page = "Event List"
         st.rerun()
-import streamlit as st
+    
 
 # Page Navigation
 
@@ -1371,6 +1371,91 @@ if st.session_state.page == "Minute to Win It" :
             /* Enhance button hover effect */
             a > button:hover {
                 background-color: #0056b3;
+            }
+        </style>
+    """, unsafe_allow_html=True)
+
+    if st.button("View Event List"):
+        st.session_state.page = "Event List"
+        st.rerun()
+
+
+if st.session_state.page == "Smash Karts":
+    if st.button("Return to Home"):
+        st.session_state.page = "Home"
+        st.rerun()
+
+    # Event Header
+    st.title("🏎️ Smash Karts")
+    st.subheader("Rev Up Your Engines and Race to Victory!")
+
+    # Event Overview
+    st.markdown("""
+    Welcome to **Smash Karts**! Get ready to race against the clock and your competitors in a thrilling karting event. From qualification heats to the grand finale, only the fastest and most skilled racers will prevail!
+    """)
+
+    # Event Details
+    st.header("Event Levels")
+    st.markdown("""
+    ### Level 1: Qualification Heats
+    - **Objective**: Participants compete in initial kart races to secure their spot in the semi-finals.
+    - **Difficulty**: Beginner
+
+    ### Level 2: Semi-Finals
+    - **Objective**: The top racers from the heats face off with added challenges and obstacles.
+    - **Difficulty**: Intermediate
+
+    ### Level 3: Grand Finale
+    - **Objective**: The final race determines the champion. Only the best will cross the finish line first!
+    - **Difficulty**: Advanced
+    """)
+
+    # Registration Information
+    st.header("Registration Details")
+    st.markdown("""
+    - **Fee**:
+      - ₹40 for 1 person
+    - **How to Register**: Race solo or team up with a friend and put your driving skills to the test!
+    """)
+
+    # Call to Action
+    st.markdown("#### 🏆 **Register now and get ready to smash your way to victory!** 🏆")
+    registration_link = "https://docs.google.com/forms/d/e/1FAIpQLSeeRZlHuPQ0E3Y2eyb3TYgjk6Kig3ct-i2xZlht8Drh5zqw7Q/viewform"  # Replace with your actual registration link
+    st.markdown(f'''
+        <a href="{registration_link}" target="_blank">
+            <button style="
+                width:100%; 
+                padding:10px; 
+                background-color:#1E90FF; 
+                color:white; 
+                font-size:16px; 
+                border:none; 
+                border-radius:5px;
+                cursor:pointer;">
+                Register Now!
+            </button>
+        </a>
+    ''', unsafe_allow_html=True)
+
+    # Footer
+    st.markdown("---")
+    st.markdown("For more information or queries, please contact [Event Organizer](mailto:event.organizer@example.com).")
+
+    # Customize layout and style
+    st.markdown("""
+        <style>
+            /* Center the text and apply primary color */
+            .css-1d391kg { 
+                text-align: center; 
+                color: #1E90FF;
+            }
+            /* Adjust the color for secondary text */
+            .css-145kmo2 { 
+                color: #3A3A3A;
+            }
+            /* Enhance button hover effect */
+            a > button:hover {
+                background-color: #00BFFF;
             }
         </style>
     """, unsafe_allow_html=True)
