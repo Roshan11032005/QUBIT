@@ -26,7 +26,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-     t
+      - name: Run tests
+        run: |
+          # Replace `pytest` with your testing command if needed
+          pytest
 
   deploy:
     runs-on: ubuntu-latest
@@ -51,4 +54,3 @@ jobs:
           STREAMLIT_DEPLOYMENT_KEY: ${{ secrets.STREAMLIT_DEPLOYMENT_KEY }}
         run: |
           streamlit run app.py --server.port $PORT
-
